@@ -1,5 +1,8 @@
-function toggleMenu() {
-    const links = document.querySelector('.navbar__links');
-    links.classList.toggle('active');
-  }
-  
+// script.js
+
+const toggleButton = document.getElementById('toggleButton');
+const navLinks = document.getElementById('navLinks');
+
+toggleButton.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
