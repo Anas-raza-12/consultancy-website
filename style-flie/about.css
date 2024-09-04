@@ -982,3 +982,141 @@ footer > .container > .d-flex > .d-flex {
     margin: 0;
   }
 }
+/* ---------------------------------------------------------------------------------Job-form-style--------------------------------------------------------------------------------- */
+.job-form > .first-container {
+  background-image: linear-gradient(#1e7fe6 70%, #fff 30%);
+}
+.job-form > .first-container .row > .col-lg-6 {
+  align-items: center;
+}
+.job-form > .first-container .row > .col-lg-6 h1 {
+  font-family: Nunito;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+.job-form > .first-container .row > .col-lg-6 p {
+  font-family: Inter;
+  color: white;
+  font-size: 18px;
+}
+.job-form > .first-container .row > .col-lg-6 img {
+  width: 100%;
+}
+
+.job-form > .second-container {
+  margin: 4vh auto;
+}
+.job-form > .second-container {
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 5vh 1vw;
+}
+.job-form > .second-container > .row > .col-lg-9 {
+  padding: 2vh 2vw;
+}
+.job-form > .second-container > .row > .col-lg-9 > h1 {
+  font-family: Nunito;
+  font-size: 50px;
+  font-weight: 700;
+}
+.job-form > .second-container > .row > .col-lg-9 > h1 > span {
+  color: #1e7fe6;
+}
+.job-form > .second-container > .row > .col-lg-9 .col-lg-6 {
+  background: #ffff;
+  width: 45%;
+  padding: 1vh 1vw;
+  margin: 1vh auto;
+}
+.job-form > .second-container > .row > .col-lg-9 .col-lg-6 label {
+  font-weight: 600;
+}
+.job-form > .second-container > .row > .col-lg-9 .col-lg-6 input {
+  border: none;
+  margin: 1vh 0vw 0.5vh 0vw;
+  width: 100%;
+}
+.job-form > .second-container > .row > .col-lg-9 .col-lg-6 textarea {
+  border: none;
+}
+.job-form > .second-container > .row .col-lg-3 {
+  background: #ffff;
+
+  padding: 1vh 1vw;
+  margin: 1vh auto;
+}
+.job-form > .second-container > .row .col-lg-3 input {
+  border: none;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border-color: transparent;
+}
+textarea:focus {
+  outline: none;
+  border-color: transparent;
+}
+.job-form > .second-container > .row .col-lg-6 {
+  background: #ffff;
+  width: 45%;
+  padding: 1vh 1vw;
+  margin: 1vh auto;
+}
+.job-form > .second-container > .row .col-lg-6 select {
+  border: none;
+  width: 100%;
+  margin: 1vh 0vw 0.5vh 0vw;
+}
+.job-form > .second-container > .row > .col-lg-6 label {
+  font-weight: 600;
+}
+.job-form > .second-container > .row .col-lg-6 input {
+  border: none;
+  margin: 1vh 0vw 0.5vh 0vw;
+  width: 100%;
+}
+.job-form > .second-container button {
+  width: 15%;
+  margin: 3vh 2vh;
+  padding: 1vh 1vw;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+}
+.job-form > .second-container .last-line {
+  padding: 1vh 2vw;
+}
+.job-form > .second-container .last-line h5 {
+  margin-top: 2vh;
+}
+
+@media (max-width: 1024px) {
+  .job-form > .first-container .row > .col-lg-6 img {
+    width: 70%;
+    margin: 0vh 15%;
+  }
+}
+@media (max-width: 445px) {
+  .job-form > .first-container {
+    background-image: linear-gradient(#1e7fe6 80%, #fff 20%);
+  }
+
+  .job-form > .first-container .row > .col-lg-6 h1 {
+    font-size: 40px;
+    margin: 2vh 0vw;
+  }
+  .job-form > .first-container .row > .col-lg-6 p {
+    font-size: 16px;
+  }
+  .job-form > .second-container > .row > .col-lg-9 .col-lg-6 {
+    background: #ffff;
+    width: 90%;
+    padding: 1vh 1vw;
+    margin: 1vh auto;
+  }
+  .job-form > .second-container > .row > .col-lg-3 {
+    display: none;
+  }
+}
