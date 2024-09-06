@@ -512,7 +512,9 @@ select:focus {
   width: 200px;
   color: white;
   font-weight: 600;
-  margin: 1vh 2vw;
+  margin: 1vh 4vw;
+  border-radius: 1
+  0px;
 }
 .job-form > .second-container .last-line {
   padding: 4vh 1vw;
