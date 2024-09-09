@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../style-flie/style.css" />
     <link rel="stylesheet" href="../style-flie/tab.css" />
     <link rel="stylesheet" href="../style-flie/mobile.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar blue-bg">
@@ -49,7 +50,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12">
-              <div>
+              <div  data-aos="fade-up" data-aos-duration="1000">
                 <h1>Contact us</h1>
                 <p>
                   Experience a rise in your pursuits with our expert consulting.
@@ -59,16 +60,16 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div data-aos="fade-up" data-aos-duration="1000" class="col-lg-6 col-md-12">
               <img src="../image/Main image.png" alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="second-container container">
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="second-container container">
         <div class="row">
-          <div class="col-lg-6">
+          <div data-aos="zoom-in-right" data-aos-duration="1000" class="col-lg-6">
             <div>
               <h1>Get in <span>Touch</span></h1>
               <p>
@@ -139,7 +140,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 map">
+          <div data-aos="zoom-in-left" data-aos-duration="1000" class="col-lg-6 map">
            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28956.907184662487!2d67.12986704999999!3d24.8770503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33999ec8ecc87%3A0xda9cc5004c86e53f!2sMETRO%20Stargate%20Store%2C%20Karachi!5e0!3m2!1sen!2s!4v1725271465617!5m2!1sen!2s"
               width="600"
@@ -152,7 +153,7 @@
           </div>
         </div>
       </div>
-      <div class="sixthty-container container">
+      <div data-aos="zoom-in-up" data-aos-duration="1000" class="sixthty-container container">
         <div class="first">
           <h5>Start now</h5>
           &nbsp;
@@ -181,7 +182,7 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div data-aos="zoom-in-up"  data-aos-duration="1000" class="container-fluid">
         <img src="../image/Company logos.png" alt="" />
       </div>
     </div>
@@ -252,5 +253,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../style-flie/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
   </body>
 </html>

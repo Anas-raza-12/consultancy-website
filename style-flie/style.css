@@ -1,3 +1,11 @@
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.082);
+  --input-radies: 10px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -215,12 +223,12 @@ select:focus {
   display: flex;
   align-items: center;
 }
-.first-container .row > .col-lg-6 {
+.first-container .row   .col-lg-6 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.first-container .row > .col-lg-6 img {
+.first-container .row   .col-lg-6 img {
   height: 70vh;
 }
 .first-container .row > .col-lg-6 h1 {
@@ -470,55 +478,61 @@ select:focus {
   margin: 0vh 2.5vw;
 }
 /* ----------------------jobform style---------------------- */
+
 .job-form > .second-container {
   margin: 5vh auto;
   background: #f6f6f6;
   border-radius: 20px;
-  padding: 5vh 0vw 5vh 2vw;
+  padding: 0vh 0vw 5vh 0vw;
 }
-.job-form > .second-container h1 > span {
+.job-form > .second-container h1 {
+  font-size: 50px;
+}
+.job-form > .second-container h1 span {
   color: #1e7fe6;
 }
-
-.job-form > .second-container .col-lg-9 {
-  padding: 2vh 2vw;
+.job-form > .second-container > .row > .col-lg-9 {
+  padding: 5vh;
 }
-.job-form > .second-container .col-lg-9 .col-lg-6 {
-  background: #fff;
-  margin: 1vh auto;
-  width: 45%;
-  padding: 1vh 1vw;
-}
-
-.job-form > .second-container .col-lg-6 {
-  width: 45%;
+.job-form > .second-container .row .col-lg-9 .col-lg-5 {
   padding: 1vh 1vw;
   background: #fff;
   margin: 1vh auto;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  border-radius: var(--input-radies);
 }
-.job-form > .second-container .col-lg-3 {
-  width: 20%;
+.job-form > .second-container .row .col-lg-9 .col-lg-3 {
   margin: 1vh auto;
   background: #fff;
   padding: 1vh 1vw;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  border-radius: var(--input-radies);
 }
-.job-form > .second-container .img {
-  padding: 0;
+.job-form > .second-container > .row > .col-lg-5 {
+  padding: 1vh 1vw;
+  background: #fff;
+  margin: 1vh auto;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  border-radius: var(--input-radies);
+}
+.job-form > .second-container > .row > .col-lg-3 {
+  margin: 1vh auto;
+  background: #fff;
+  padding: 1vh 1vw;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  border-radius: var(--input-radies);
 }
 .job-form > .second-container button {
   border: none;
   background-color: #ff6d6d;
-  padding: 1vh 1vw;
-  width: 200px;
+  padding: 1.5vh 1vw;
+  width: 250px;
   color: white;
   font-weight: 600;
-  margin: 1vh 4vw;
-  border-radius: 1
-  0px;
-}
-.job-form > .second-container .last-line {
-  padding: 4vh 1vw;
-  font-size: 20px;
+  border-radius: var(--input-radies);
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+
+  margin: 1vh auto;
 }
 /* ----------------------contact style---------------------- */
 .contact > .second-container {

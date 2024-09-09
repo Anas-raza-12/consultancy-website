@@ -1,270 +1,277 @@
 @media (max-width: 1024px) {
   .first-container .row > .col-lg-6 {
-      padding: 4vh 4vw;
+    padding: 4vh 4vw;
   }
   .first-container .row > .col-lg-6 h1 {
-      font-size: 50px;
-      line-height: 60px;
+    font-size: 50px;
+    line-height: 60px;
   }
   .first-container .row > .col-lg-6 p {
-      font-size: 19px;
-      letter-spacing: 0px;
+    font-size: 19px;
+    letter-spacing: 0px;
   }
   .first-container .row > .col-lg-6 img {
-      height: 50vh;
-      width: auto;
-      margin-top: 3vh;
+    height: 50vh;
+    width: auto;
+    margin-top: 3vh;
   }
   /* ----------------------home style---------------------- */
 
   .Home > .first-container .row > .col-lg-6 form {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 400px;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
-      padding: 1vh 1vw;
-      border-radius: 10px;
-      margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    margin-top: 20px;
   }
 
   .Home > .second-container > .row > .col-lg-6 h1 {
-      font-size: 50px;
+    font-size: 50px;
   }
   .Home > .second-container > .row > .col-lg-6 p {
-      font-size: 18px;
-      margin: 2vh 0vw;
+    font-size: 18px;
+    margin: 2vh 0vw;
   }
   .Home > .second-container > .row > .col-lg-6 img {
-      height: 40vh;
-      width: auto;
+    height: 40vh;
+    width: auto;
   }
 
   .secondly-container > .row > .col-lg-6 {
-      align-items: center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .secondly-container > .row > .img {
-      order: 2 !important;
+    order: 2 !important;
   }
 
   .secondly-container > .row > .col-lg-6 > img {
-      height: 40vh;
-      width: auto;
+    height: 40vh;
+    width: auto;
   }
   .secondly-container > .row > .col-lg-6 h1 {
-      font-size: 50px;
+    font-size: 50px;
   }
   .secondly-container > .row > .col-lg-6 p {
-      font-size: 18px;
-      margin: 2vh 0vw;
+    font-size: 18px;
+    margin: 2vh 0vw;
   }
   .secondly-container > .row > .col-lg-6 .row > .col-lg-6 {
-      margin: 1vh 0vw;
+    margin: 1vh 0vw;
   }
   .secondly-container > .row > .col-lg-6 .row > .col-lg-6 img {
-      width: 40px;
+    width: 40px;
   }
   .secondly-container > .row > .col-lg-6 .row > .col-lg-6 h5 {
-      margin: 0 1vw;
+    margin: 0 1vw;
   }
 
   .Home > .forth-container > h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .Home > .forth-container > p {
-      font-size: 18px;
+    font-size: 18px;
   }
   .Home > .forth-container > .row > .col-lg-3 {
-      width: 47%;
-      margin: 1vh auto;
-      padding: 2vh 1vw;
-      border-radius: 30px 0px 30px 0px;
+    width: 47%;
+    margin: 1vh auto;
+    padding: 2vh 1vw;
+    border-radius: 30px 0px 30px 0px;
   }
 
   .thirdly-container h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .thirdly-container > .row > .col-lg-4 {
-      margin: auto;
+    margin: auto;
   }
   .thirdly-container > .row > .col-lg-4 > img {
-      width: 60px;
-      margin: 2vh 0vw 5vh 0vw;
+    width: 60px;
+    margin: 2vh 0vw 5vh 0vw;
   }
   .thirdly-container > .row > .col-lg-4 > h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
   .thirdly-container > .row > .col-lg-4 > p {
-      font-weight: 400;
-      font-size: 18px;
+    font-weight: 400;
+    font-size: 18px;
   }
 
   .sixthty-container > .row > .col-lg-6 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sixthty-container > .row > .col-lg-6 > div > h1 {
-      font-size: 40px;
-      color: #fff;
+    font-size: 40px;
+    color: #fff;
   }
   .sixthty-container > .row > .col-lg-6 > div > form > input {
-      padding: 1vh 1vw;
-      width: 200px;
+    padding: 1vh 1vw;
+    width: 200px;
   }
   .sixthty-container > .row > .col-lg-6 > div > form {
-      margin: 2vh 0vw;
+    margin: 2vh 0vw;
   }
   .sixthty-container > .row > .col-lg-6 > div > form > button {
-      padding: 1vh 1vw;
-      border: none;
+    padding: 1vh 1vw;
+    border: none;
   }
 
   .Services .forth-container > .container > h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .Services .forth-container > .container > p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .Services > .forth-container > .container > .row > .col-lg-4 {
-      width: 45%;
-      margin: 1vh auto;
-      border: 1px solid #b0b0b0;
-      border-radius: 30px 0px 30px 0px;
-      padding: 2vh 2vw;
+    width: 45%;
+    margin: 1vh auto;
+    border: 1px solid #b0b0b0;
+    border-radius: 30px 0px 30px 0px;
+    padding: 2vh 2vw;
   }
   .Services > .forth-container > .container > .row > .col-lg-4 > .d-flex {
-      align-items: center;
-      margin: 2vh 0vw;
+    align-items: center;
+    margin: 2vh 0vw;
   }
   .Services > .forth-container > .container > .row > .col-lg-4 > .d-flex > img {
-      width: 50px;
-      border-radius: 50%;
+    width: 50px;
+    border-radius: 50%;
   }
-  .Services > .forth-container > .container > .row > .col-lg-4 > .d-flex > div > h4 {
-      margin: 0;
-      font-size: 20px;
-      padding: 0;
+  .Services
+    > .forth-container
+    > .container
+    > .row
+    > .col-lg-4
+    > .d-flex
+    > div
+    > h4 {
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
   }
   .Services > .forth-container > .container > .row > .col-lg-4 > p {
-      font-size: 16px;
-      margin: 0;
+    font-size: 16px;
+    margin: 0;
   }
 
   .job-form > .second-container {
-      margin: 0vh auto;
+    margin: 0vh auto;
   }
 
   .job-form > .second-container .col-lg-9 {
-      padding: 2vh 2vw;
+    padding: 2vh 2vw;
   }
   .job-form > .second-container .col-lg-9 .col-lg-6 {
-      background: #fff;
-      margin: 1vh auto;
-      width: 45%;
-      padding: 1vh 1vw;
+    background: #fff;
+    margin: 1vh auto;
+    width: 45%;
+    padding: 1vh 1vw;
   }
 
   .job-form > .second-container .col-lg-6 {
-      width: 45%;
-      padding: 1vh 1vw;
-      background: #fff;
-      margin: 1vh auto;
+    width: 45%;
+    padding: 1vh 1vw;
+    background: #fff;
+    margin: 1vh auto;
   }
   .job-form > .second-container .col-lg-3 {
-      width: 22%;
-      margin: 1vh auto;
-      background: #fff;
-      padding: 1vh 1vw;
+    width: 22%;
+    margin: 1vh auto;
+    background: #fff;
+    padding: 1vh 1vw;
   }
   .job-form > .second-container .img {
-      padding: 0;
-      display: none;
+    padding: 0;
+    display: none;
   }
   .job-form > .second-container button {
-      border: none;
-      background-color: #ff6d6d;
-      padding: 1vh 1vw;
-      width: 200px;
-      color: white;
-      font-weight: 600;
-      margin: 1vh 2vw;
+    border: none;
+    background-color: #ff6d6d;
+    padding: 1vh 1vw;
+    width: 200px;
+    color: white;
+    font-weight: 600;
+    margin: 1vh auto;
   }
   .job-form > .second-container .last-line {
-      padding: 4vh 1vw;
-      font-size: 16px;
+    padding: 4vh 1vw;
+    font-size: 16px;
   }
   .job-form > .second-container .last-line > h5 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .contact > .second-container {
-      margin: 5vh auto;
-      background-image: linear-gradient(to bottom, #fff 80%, #1e7fe6 20%);
-      padding: 6vh 2vw;
-      border-radius: 30px;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.171);
+    margin: 5vh auto;
+    background-image: linear-gradient(to bottom, #fff 80%, #1e7fe6 20%);
+    padding: 6vh 2vw;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.171);
   }
   .contact > .second-container > .row > .col-lg-6 {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
   .contact > .second-container > .row > .col-lg-6 > div > h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
   .contact > .second-container > .row > .col-lg-6 > div > h1 > span {
-      color: #1e7fe6;
+    color: #1e7fe6;
   }
   .contact > .second-container > .row > .col-lg-6 > div > p {
-      font-size: 16px;
+    font-size: 16px;
   }
   .contact > .second-container > .row > .col-lg-6 > div > form > input {
-      width: 100%;
-      border: 1px solid #d5dddd;
-      margin: 1vh auto;
-      padding: 1vh 0.5vw;
+    width: 100%;
+    border: 1px solid #d5dddd;
+    margin: 1vh auto;
+    padding: 1vh 0.5vw;
   }
   .contact > .second-container > .row > .col-lg-6 > div > form > select {
-      width: 100%;
-      border: 1px solid #d5dddd;
-      padding: 1vh 0.5vw;
-      margin: 1vh auto;
+    width: 100%;
+    border: 1px solid #d5dddd;
+    padding: 1vh 0.5vw;
+    margin: 1vh auto;
   }
   .contact > .second-container > .row > .col-lg-6 > div > form > select:focus {
-      border: 1px solid #d5dddd;
+    border: 1px solid #d5dddd;
   }
   .contact > .second-container > .row > .col-lg-6 > div > form > button {
-      width: 100%;
-      padding: 1vh;
-      background: #ff6d6d;
-      font-size: 18px;
-      color: #fff;
-      border: none;
-      font-weight: 700;
-      margin: 2vh 0vw;
+    width: 100%;
+    padding: 1vh;
+    background: #ff6d6d;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    margin: 2vh 0vw;
   }
   .contact > .second-container > .row > .col-lg-6 > div > .row {
-      margin: 2vh 0vw;
+    margin: 2vh 0vw;
   }
   .contact > .second-container > .row > .col-lg-6 > div > .row > .d-flex {
-      align-items: center;
-      gap: 0vh 1vw;
+    align-items: center;
+    gap: 0vh 1vw;
   }
   .contact > .second-container > .row > .col-lg-6 > div > .row > .d-flex i {
-      font-size: 20px;
+    font-size: 20px;
   }
   .contact > .second-container > .row > .col-lg-6 > div > .row > .d-flex h6 {
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
   }
   .contact > .second-container > .row > .col-lg-6 > div > .row > .d-flex p {
-      margin: 0;
+    margin: 0;
   }
   .contact > .second-container iframe {
-      width: 100%;
-      height: 40vh;
-      border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 40vh;
+    border-radius: 0px 0px 20px 20px;
   }
 }

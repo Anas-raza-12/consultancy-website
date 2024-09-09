@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../style-flie/style.css" />
     <link rel="stylesheet" href="../style-flie/tab.css" />
     <link rel="stylesheet" href="../style-flie/mobile.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar blue-bg">
@@ -38,7 +39,7 @@
           <li><a href="../files/sevices.html">Service</a></li>
           <li><a href="../files/contact.html">Contact</a></li>
           <li><a href="../files/jobform.html">Job Form</a></li>
-         
+
           <li><a href="#" class="get-started">Get Started</a></li>
         </ul>
         <button class="toggle-button" id="toggleButton">☰</button>
@@ -48,9 +49,11 @@
       <div class="first-container background-color-blue">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 d-flex">
-              <div>
-                <h1>Job form</h1>
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center"
+            >
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <h1>Job <span>form</span></h1>
                 <p>
                   Experience a rise in your pursuits with our expert consulting.
                   We excel in tailoring success strategies to your unique goals,
@@ -59,7 +62,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="col-lg-5 d-flex d-flex align-items-center justify-content-center"
+            >
               <img src="../image/Main image.png" alt="" />
             </div>
           </div>
@@ -71,7 +78,7 @@
             <h1>Job <span>Form</span></h1>
             <div class="row">
               <!-- First Name -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="first-name">First Name</label><br />
                 <input
                   id="first-name"
@@ -80,7 +87,7 @@
                 />
               </div>
               <!-- Last Name -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="last-name">Last Name</label><br />
                 <input
                   id="last-name"
@@ -89,12 +96,12 @@
                 />
               </div>
               <!-- Email -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="email">Business Email</label><br />
                 <input id="email" type="email" placeholder="Enter your email" />
               </div>
               <!-- Phone Number -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="phone">Phone Number</label><br />
                 <input
                   id="phone"
@@ -103,12 +110,12 @@
                 />
               </div>
               <!-- Age -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="age">Age</label><br />
                 <input id="age" type="number" placeholder="Enter your age" />
               </div>
               <!-- Religion -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="religion">Religion</label><br />
                 <input
                   id="religion"
@@ -117,7 +124,7 @@
                 />
               </div>
               <!-- Gender -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="gender">Gender</label><br />
                 <input
                   id="gender"
@@ -126,12 +133,12 @@
                 />
               </div>
               <!-- Date of Birth -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="dob">Date of Birth</label><br />
                 <input id="dob" type="date" />
               </div>
               <!-- Cover Letter -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="cover-letter">Cover Letter</label><br />
                 <textarea
                   id="cover-letter"
@@ -140,7 +147,7 @@
                 ></textarea>
               </div>
               <!-- Identity Card -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="identity-card">Identity Card</label><br />
                 <input
                   id="identity-card"
@@ -149,7 +156,7 @@
                 />
               </div>
               <!-- Current Status -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="current-status">Current Status</label><br />
                 <input
                   id="current-status"
@@ -158,12 +165,12 @@
                 />
               </div>
               <!-- Job Type -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="job-type">Job Type</label><br />
                 <input id="job-type" type="text" placeholder="Enter job type" />
               </div>
               <!-- Address -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="address">Address</label><br />
                 <input
                   id="address"
@@ -172,7 +179,7 @@
                 />
               </div>
               <!-- Postal Code -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="postal-code">Postal Code</label><br />
                 <input
                   id="postal-code"
@@ -181,7 +188,7 @@
                 />
               </div>
               <!-- Degree -->
-              <div class="col-lg-6">
+              <div class="col-lg-5 col-md-5">
                 <label for="degree">Degree</label><br />
                 <input id="degree" type="text" placeholder="Enter degree" />
               </div>
@@ -199,7 +206,17 @@
           </div>
 
           <!-- Right Side Image -->
-          <div style="background-color: transparent" class="col-lg-3 img">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            style="
+              background-color: transparent;
+              box-shadow: none;
+              margin: 0;
+              padding: 0;
+            "
+            class="col-lg-3 img"
+          >
             <img
               width="100%"
               src="../image/Div [sc-vlvgto-0].png"
@@ -208,7 +225,7 @@
           </div>
 
           <!-- Additional Details -->
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="experience">Experience</label><br />
             <input
               type="text"
@@ -217,7 +234,7 @@
             />
           </div>
           <!-- Previous Company -->
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="previous-company">Previous Company</label><br />
             <select id="previous-company">
               <option value="">Select</option>
@@ -227,24 +244,24 @@
             </select>
           </div>
           <!-- Social Media Links -->
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="linkedin">LinkedIn</label><br />
             <input type="text" id="linkedin" placeholder="LinkedIn" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="twitter">Twitter</label><br />
             <input type="text" id="twitter" placeholder="Twitter" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="facebook">Facebook</label><br />
             <input type="text" id="facebook" placeholder="Facebook" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="github">GitHub</label><br />
             <input type="text" id="github" placeholder="GitHub" />
           </div>
           <!-- Previous Work Title -->
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="previous-work-title">Previous Work Title</label><br />
             <input
               type="text"
@@ -257,21 +274,21 @@
             <input type="date" />
           </div>
           <div class="col-lg-3">
-            <label for="">Previous Work End Date</label>
+            <label for="">Previous Work End Date</label><br />
             <input type="date" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="">Position Applying For</label> <br />
             <input type="text" placeholder="Position Applying For:" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 col-md-5 col-sm-10">
             <label for="">CV</label> <br />
             <input type="file" placeholder="Position Applying For:" />
           </div>
           <button class="submite">Submite Form</button>
         </form>
         <div
-          style="border-top: 2px solid black"
+          style="border-top: 2px solid black; padding: 3vh 2vw"
           class="col-lg-8 col-md-7 last-line"
         >
           <h5>
@@ -285,7 +302,11 @@
           </h5>
         </div>
       </div>
-      <div class="sixthty-container container">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        class="sixthty-container container"
+      >
         <div class="first">
           <h5>Start now</h5>
           &nbsp;
@@ -314,7 +335,7 @@
         </div>
       </div>
 
-      <div class="container-fluid">
+      <div data-aos="zoom-in" data-aos-duration="1300" class="container-fluid">
         <img src="../image/Company logos.png" alt="" />
       </div>
     </div>
@@ -343,7 +364,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 section" >
+          <div class="col-lg-3 col-md-6 section">
             <h3>Our Services</h3>
             <ul>
               <li><a href="/">Management System</a></li>
@@ -387,4 +408,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="../style-flie/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
