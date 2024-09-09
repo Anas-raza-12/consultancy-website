@@ -456,6 +456,65 @@ select:focus {
 
 /* ----------------------abuot style---------------------- */
 
+.About .second-container .d-flex{
+  align-items: center;
+}
+
+
+
+
+
+
+
+.About     .thrid-container{
+  margin: 5vh auto;
+}
+.About  .thrid-container   h1 {
+  font-size: 60px;
+}
+.About > .thrid-container > p {
+  font-size: 20px;
+}
+.About > .thrid-container > .row > .col-lg-3 {
+  width: 30%;
+  margin: 2vh auto;
+  padding: 2vh 1vw;
+  border-radius: 30px 0px 30px 0px;
+}
+.About > .thrid-container > .row > .col-lg-3 .d-flex {
+  align-items: center;
+}
+.About > .thrid-container > .row > .col-lg-3 .d-flex img {
+  width: 50px;
+  border-radius: 50%;
+}
+.About > .thrid-container > .row > .col-lg-3 .d-flex > div > h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.About > .thrid-container > .row > .col-lg-3 .d-flex > div {
+  margin: 0vh 1vw;
+}
+.About > .thrid-container > .row > .col-lg-3 .d-flex > div > p {
+  color: #b0b0b0;
+  margin: 0;
+}
+.About > .thrid-container > .row > .col-lg-3 > p {
+  font-size: 18px;
+  margin: 4vh 0vw;
+}
+.About > .thrid-container > .row > .col-lg-3 > img {
+  width: 25px;
+  float: right;
+}
+.About > .thrid-container > p {
+  font-size: 20px;
+}
+
+
+
+
+
 
 
 
