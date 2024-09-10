@@ -121,6 +121,29 @@
     border: none;
   }
 
+  .About .thrid-container h1 {
+    font-size: 30px;
+  }
+  
+.About > .thrid-container > .row > .col-lg-3  {
+  width: 30%;
+  margin: 2vh auto;
+  padding: 2vh 4vw;
+  border-radius: 40px 0px 40px 0px;
+}
+.About > .thrid-container > .row > .col-lg-3  div{
+  padding: 1vh 2vw;
+}
+.About > .thrid-container > .row > .col-lg-3  p{
+  margin: 4vh 2vw;
+}
+.About > .thrid-container > .row > .col-lg-3 {
+  width: 98%;
+  margin: 1vh auto;
+  padding: 2vh 6vw;
+  border-radius: 60px 0px 60px 0px;
+}
+
   .Services .forth-container > .container > h1 {
     font-size: 40px;
   }
@@ -159,32 +182,29 @@
     font-size: 16px;
     margin: 0;
   }
- 
 
-
-  .job-form > .second-container > .row>.row{
+  .job-form > .second-container > .row > .row {
     padding: 0;
     margin: auto;
   }
-  .job-form > .second-container  .img{
+  .job-form > .second-container .img {
     display: none;
   }
-  .job-form > .second-container > .row{
+  .job-form > .second-container > .row {
     box-shadow: 0px 0px 10px 0px var(--box-shadow);
-  padding:0;
-  border-radius: 20px;
+    padding: 0;
+    border-radius: 20px;
   }
 
-  .job-form > .second-container  .row .col-lg-6 {
+  .job-form > .second-container .row .col-lg-6 {
     width: 48%;
     margin: 1vh auto;
     box-shadow: 0px 0px 10px 0px var(--box-shadow);
     border-radius: 10px;
-    height:80px;
+    height: 80px;
     padding: 1vh 2vw;
-   
   }
-  .job-form > .second-container  .row > button{
+  .job-form > .second-container .row > button {
     width: 180px;
     background: #ff6b6b;
     padding: 1vh 1vw;
@@ -193,39 +213,31 @@
     margin: 2vh auto;
   }
 
+  .form {
+    min-height: 50vh;
+    margin-top: 10vh;
+    display: grid;
+    align-items: center;
+  }
 
+  .form > .row > .col-lg-4 {
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px var(--box-shadow);
+    padding: 1vw;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.8s;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .form > .row > .col-lg-4 a h1 {
+    text-align: center;
+    font-size: 25px;
+    margin: 2vh AUTO;
+    font-weight: 800;
+    color: #000;
+  }
 
   .contact > .second-container {
     margin: 5vh auto;

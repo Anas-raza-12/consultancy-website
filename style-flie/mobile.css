@@ -100,6 +100,7 @@
   }
 
   /* ----------------------home style---------------------- */
+  
 
   .Home > .first-container .row > .col-lg-6 form {
     display: flex;
@@ -162,7 +163,28 @@
   .Home > .forth-container > p {
     font-size: 18px;
   }
-
+  .About .thrid-container h1 {
+    font-size: 30px;
+  }
+  
+.About > .thrid-container > .row > .col-lg-3  {
+  width: 30%;
+  margin: 2vh auto;
+  padding: 2vh 4vw;
+  border-radius: 40px 0px 40px 0px;
+}
+.About > .thrid-container > .row > .col-lg-3  div{
+  padding: 1vh 2vw;
+}
+.About > .thrid-container > .row > .col-lg-3  p{
+  margin: 4vh 2vw;
+}
+.About > .thrid-container > .row > .col-lg-3 {
+  width: 90%;
+  margin: 2vh auto;
+  padding: 2vh 1vw;
+  border-radius: 30px 0px 30px 0px;
+}
   .Services .forth-container > .container > h1 {
     font-size: 30px;
   }
@@ -201,29 +223,28 @@
     font-size: 16px;
     margin: 0;
   }
-  .job-form > .second-container > .row>.row{
+  .job-form > .second-container > .row > .row {
     padding: 0;
     margin: auto;
   }
-  .job-form > .second-container  .img{
+  .job-form > .second-container .img {
     display: none;
   }
-  .job-form > .second-container > .row{
+  .job-form > .second-container > .row {
     box-shadow: 0px 0px 10px 0px var(--box-shadow);
-  padding:0;
-  border-radius: 20px;
+    padding: 0;
+    border-radius: 20px;
   }
 
-  .job-form > .second-container  .row .col-lg-6 {
+  .job-form > .second-container .row .col-lg-6 {
     width: 95%;
     margin: 1vh auto;
     box-shadow: 0px 0px 10px 0px var(--box-shadow);
     border-radius: 10px;
     height: 10vh;
     padding: 2vh 2vw;
-   
   }
-  .job-form > .second-container  .row > button{
+  .job-form > .second-container .row > button {
     width: 180px;
     background: #ff6b6b;
     padding: 1vh 1vw;
@@ -232,38 +253,24 @@
     margin: 2vh auto;
   }
 
+  .form {
+    min-height: 150vh;
+    margin-top: 10vh;
+    display: grid;
+    align-items: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .form > .row > .col-lg-4 {
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px var(--box-shadow);
+    padding: 2vh 3vw;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.8s;
+    width: 90%;
+  }
 
   .contact > .second-container {
     margin: 5vh auto;
@@ -331,13 +338,13 @@
     height: 40vh;
     border-radius: 0px 0px 20px 20px;
   }
-  footer{
+  footer {
     padding: 5vh 2vw !important;
   }
   footer section {
     margin: 10vh;
   }
-  footer li{
+  footer li {
     font-size: 14px;
   }
 }

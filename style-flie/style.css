@@ -530,10 +530,10 @@ select:focus {
   margin: 0vh 2.5vw;
 }
 /* ----------------------jobform style---------------------- */
-.job-form > .second-container > .row{
+.job-form > .second-container > .row {
   box-shadow: 0px 0px 10px 0px var(--box-shadow);
-padding: 2vh 2vw ;
-border-radius: 20px;
+  padding: 2vh 2vw;
+  border-radius: 20px;
 }
 .job-form > .second-container > .row .col-lg-6 {
   margin: 1vh auto;
@@ -543,51 +543,51 @@ border-radius: 20px;
   padding: 1vh 2vw;
   width: 49%;
 }
-.job-form > .second-container > .row .col-lg-6 label{
+.job-form > .second-container > .row .col-lg-6 label {
   font-weight: 600;
 }
-.job-form > .second-container > .row .col-lg-6 ::placeholder{
+.job-form > .second-container > .row .col-lg-6 ::placeholder {
   color: gray;
 }
 
-.job-form > .second-container  .row > .col-lg-6 > input {
+.job-form > .second-container .row > .col-lg-6 > input {
   border: none;
   margin: 1vh 0vw;
   padding: 0;
   width: 100%;
 }
-.job-form > .second-container  .row > .col-lg-6 > select {
+.job-form > .second-container .row > .col-lg-6 > select {
   margin: 1vh 0vw;
   padding: 0;
   width: 100%;
   border: none;
 }
-.job-form > .second-container  .row > .col-lg-6 > textarea {
+.job-form > .second-container .row > .col-lg-6 > textarea {
   border: none;
   margin: 1vh 0vw;
   padding: 0;
   width: 100%;
 }
-.job-form > .second-container  .row > .col-lg-6 > textarea:focus {
+.job-form > .second-container .row > .col-lg-6 > textarea:focus {
   box-shadow: none;
   border: none;
 }
-.job-form > .second-container  .row > .col-lg-6 > input:focus {
+.job-form > .second-container .row > .col-lg-6 > input:focus {
   box-shadow: none;
   border: none;
 }
-.job-form > .second-container  .row > .col-lg-6 > select:focus {
+.job-form > .second-container .row > .col-lg-6 > select:focus {
   box-shadow: none;
   border: none;
 }
-.job-form > .second-container  .row > h1 {
+.job-form > .second-container .row > h1 {
   font-size: 50px;
   margin: 1vh 2vw;
 }
-.job-form > .second-container  .row > h1 > span {
+.job-form > .second-container .row > h1 > span {
   color: #1e7fe6;
 }
-.job-form > .second-container  .row > button{
+.job-form > .second-container .row > button {
   width: 180px;
   background: #ff6b6b;
   padding: 1vh 1vw;
@@ -595,6 +595,43 @@ border-radius: 20px;
   font-weight: 700;
   margin: 2vh 1vw;
 }
+
+.form {
+  height: 70vh;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.form > .row > .col-lg-4 {
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px var(--box-shadow);
+  padding: 1vw;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+.form > .row > .col-lg-4:hover {
+  box-shadow: 0px 0px 50px 2px var(--box-shadow);
+  transition: 0.8s;
+  scale: 1.1;
+}
+.form > .row > .col-lg-4 img {
+  width: 100%;
+}
+.form > .row > .col-lg-4 a h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 2vh AUTO;
+  font-weight: 800;
+  color: #000;
+}
+.form > .row > .col-lg-4 a h1 > Span {
+  color: #1e7fe6;
+}
+
 /* ----------------------contact style---------------------- */
 .contact > .second-container {
   margin: 5vh auto;
