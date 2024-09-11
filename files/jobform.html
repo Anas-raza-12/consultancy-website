@@ -76,71 +76,7 @@
         </div>
       </div>
       <div class="second-container container">
-        <!-- <form class="row">
-          <div class="col-lg-9">
-            <h1>Job <span>Form</span></h1>
-            <div class="row">
-              
-             
-             
-              
-            
-              
-          
-             
-              
-             
-             
-              
-             
-              
-             
-              
-             
-              
-           
-              
-           
-              
-             
-              
-            
-            
-
-
-            
-            
-          
-            
-            
-            
-          </div>
-          </div>
-
-       
-          <div style="background-color: transparent; box-shadow: none;" data-aos="fade-left" data-aos-duration="1500" class="col-lg-3 img">
-            <img  width="100%" src="../image/Div [sc-vlvgto-0].png" alt="Image" />
-          </div>
-
-          
-
-        
-        </form>
-        <div
-          style="border-top: 2px solid black; padding: 3vh 2vw"
-          class="col-lg-8 col-md-7 last-line"
-        >
-          <h5>
-            By submitting this form, you agree to Companies
-            <a href="/">Terms of Service </a> and
-            <a href="/">Privacy Policy</a>
-          </h5>
-          <h5>
-            Looking for help with the job form?
-            <a href="/">Go to the help center</a>
-          </h5>
-        </div> -->
-        <form class="row">
+        <form class="row" action="save.php" method="POST" enctype="multipart/form-data">
           <div class="col-lg-9 row">
             <h1>Job <span>Form</span></h1>
             <div class="col-lg-6">
@@ -201,13 +137,13 @@
             <div class="col-lg-6">
               <label for="gender">Gender</label>
               <select id="gender" name="gender" class="form-select" required>
-                <option value="">Select</option>
+                <option selected disabled>Select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
             </div>
             <div class="col-lg-6">
-              <label for="cover-letter">Cover Letter</label>
+              <label for="cover-letter">Cover Letter (Optional)</label>
               <textarea
                 id="cover-letter"
                 name="cover_letter"
@@ -221,7 +157,7 @@
               <input
                 id="identity-card"
                 name="identity_card"
-                type="text"
+                type="file"
                 class="form-control"
                 placeholder="Enter your identity card number"
               />
@@ -281,10 +217,10 @@
             />
           </div>
           <div class="col-lg-6">
-            <label for="degree-date">Degree </label>
+            <label for="certification">Certification (Optional)</label>
             <input
-              id="degree-date"
-              name="degree_date"
+              id="certification"
+              name="certification"
               type="text"
               class="form-control"
               placeholder="Course / Certification / Diploma."
@@ -301,10 +237,10 @@
             />
           </div>
           <div class="col-lg-6">
-            <label for="photograph">Photograph</label>
+            <label for="photograph">Upload Your Image</label>
             <input
-              id="photograph"
-              name="photograph"
+              id="image"
+              name="image"
               type="file"
               class="form-control"
             />
@@ -321,10 +257,10 @@
             />
           </div>
           <div class="col-lg-6">
-            <label for="previous-company">Social Link</label>
+            <label for="previous-company">Social Link (Optional)</label>
             <input
               id="previous-company"
-              name="previous_company"
+              name="social_link"
               type="text"
               class="form-control"
               placeholder="your Social link"
@@ -332,10 +268,10 @@
           </div>
 
           <div class="col-lg-6">
-            <label for="previous-company">LinkedIn</label>
+            <label for="previous-company">LinkedIn (Optional)</label>
             <input
               id="previous-company"
-              name="previous_company"
+              name="linkedin"
               type="text"
               class="form-control"
               placeholder="your LinkedIn link"
@@ -344,14 +280,14 @@
           <div class="col-lg-6">
             <label for="previous-company">CV</label>
             <input
-              id="photograph"
-              name="photograph"
+              id="cv"
+              name="cv"
               type="file"
               class="form-control"
               placeholder="Select Your Cv"
             />
           </div>
-          <button type="submit" class="btn ">Submit Form</button>
+          <button type="submit" name="submit" class="btn">Submit Form</button>
         </form>
       </div>
       <div
