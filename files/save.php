@@ -1,20 +1,9 @@
 <?php
 // Database configuration
-$host = 'localhost'; // Replace with your database host
-$dbname = 'consultancy'; // Replace with your database name
-$username = 'root'; // Replace with your database username
-$password = ''; // Replace with your database password
+require '../admin/include/db_conn.php';
 
-// Create a new MySQLi instance
-$conn = mysqli_connect($host, $username, $password, $dbname);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-// Function to handle file uploads
-function uploadFile($fileInputName, $folder) {
+// Function to handle file uploads with restrictions
+function uploadFile($fileInputName, $folder, $allowedExtensions, $maxSize) {
     if (isset($_FILES[$fileInputName]) && $_FILES[$fileInputName]['error'] == UPLOAD_ERR_OK) {
         $fileTmpPath = $_FILES[$fileInputName]['tmp_name'];
         $fileName = $_FILES[$fileInputName]['name'];
@@ -22,16 +11,32 @@ function uploadFile($fileInputName, $folder) {
         $fileType = $_FILES[$fileInputName]['type'];
         $fileNameCmps = explode(".", $fileName);
         $fileExtension = strtolower(end($fileNameCmps));
+
+        // Validate file extension
+        if (!in_array($fileExtension, $allowedExtensions)) {
+            echo "<script>alert('Invalid file type for $fileInputName. Allowed types: " . implode(", ", $allowedExtensions) . "');window.location.href='jobform.html';</script>";
+            return null;
+        }
+
+        // Validate file size
+        if ($fileSize > $maxSize) {
+            echo "<script>alert('File size for $fileInputName exceeds the limit. Max size: " . ($maxSize / 1024) . " KB');window.location.href='jobform.html';</script>";
+            return null;
+        }
+
+        // Generate a new file name and move the file
         $newFileName = md5(time() . $fileName) . '.' . $fileExtension;
         $uploadFileDir = '../admin/uploads/' . $folder . '/';
         $dest_path = $uploadFileDir . $newFileName;
-        
+
         if (move_uploaded_file($fileTmpPath, $dest_path)) {
             return $newFileName;
         } else {
+            echo "<script>alert('There was an error uploading the file.');window.location.href='jobform.html';</script>";
             return null;
         }
     } else {
+        echo "<script>alert('No file uploaded or upload error for $fileInputName.');window.location.href='jobform.html';</script>";
         return null;
     }
 }
@@ -65,27 +70,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // Handle file uploads
-    $image = uploadFile('image', 'candi_image');
-    $identity_card = uploadFile('identity_card', 'identity_card');
-    $cv = uploadFile('cv', 'cv');
+    // Handle file uploads with restrictions
+    $image = uploadFile('image', 'candi_image', ['jpg', 'jpeg', 'png'], 500 * 1024); // 500KB
+    $identity_card = uploadFile('identity_card', 'identity_card', ['jpg', 'jpeg', 'png'], 500 * 1024); // 500KB
+    $cv = uploadFile('cv', 'cv', ['pdf'], 2 * 1024 * 1024); // 2MB
+
+    if (!$image || !$identity_card || !$cv) {
+        exit();
+    }
 
     // Insert data into database
     $query = "INSERT INTO job_form_data (
-                first_name, last_name, email, phone, gender, cover_letter, location,
+                first_name, last_name, email, phone, age, gender, cover_letter, location,
                 expected_salary, current_salary, skills, education, certification, language,
-                candi_image, identity_card, cv, socialLink, linkedIn
+                experience, candi_image, identity_card, cv, socialLink, linkedIn
               ) VALUES (
-                '$first_name', '$last_name', '$email', '$phone', '$gender', '$cover_letter',
+                '$first_name', '$last_name', '$email', '$phone', $age, '$gender', '$cover_letter',
                 '$location', '$expected_salary', '$current_salary', '$skills', '$education',
-                '$certification', '$language', '$image', '$identity_card', '$cv', '$social_link', '$linkedin'
+                '$certification', '$language', '$experience', '$image', '$identity_card', '$cv', '$social_link', '$linkedin'
               )";
 
     if (mysqli_query($conn, $query)) {
         echo "<script>alert('Your form submitted successfully.');window.location.href='jobform.html'</script>";
     } else {
         echo '<script>alert("Error: ' . htmlspecialchars(mysqli_error($conn), ENT_QUOTES, 'UTF-8') . '");window.location.href="jobform.html"</script>';
-
     }
 
     // Close the database connection

@@ -33,17 +33,19 @@
   <body>
     <nav class="navbar blue-bg">
       <div class="navbar-container">
-        <div class="logo">Logo</div>
+        <div class="logo">
+          <a href="index.html">
+              <img src="../image/1.png" alt="Logo">
+          </a>
+        </div>
         <ul class="nav-links" id="navLinks">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../files/About.html">About</a></li>
 
           <li><a href="../files/sevices.html">Service</a></li>
           <li><a href="../files/contact.html">Contact</a></li>
-          <li><a href="../files/forms.html">Job Form</a></li>
 
-
-          <li><a href="#" class="get-started">Get Started</a></li>
+          <li><a href="../files/forms.html" class="get-started">Job Form</a></li>
         </ul>
         <button class="toggle-button" id="toggleButton">☰</button>
       </div>
@@ -307,9 +309,9 @@
                 Get Started with <br />
                 us
               </h1>
-              <form action="">
-                <input type="email" placeholder="Email Address" />
-                <button>Get Started</button>
+              <form action="email.php" method="post">
+                <input type="email" name="email" placeholder="Email Address" />
+                <button type="submit" name="submit">Get Started</button>
               </form>
               <p>
                 Want to contact our team and book a call?
@@ -331,7 +333,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 section">
-            <h1>Logo</h1>
+            <div class="logo">
+              <a href="index.html">
+                  <img src="../image/1.png" alt="Logo">
+              </a>
+            </div>
             <p>
               Our expert financial consultants provide solutions to help you
               achieve financial wealth. Trust us to guide you toward a brighter

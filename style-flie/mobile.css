@@ -1,4 +1,8 @@
 @media (max-width: 445px) {
+  .logo img {
+    width: auto; 
+    height: 50px;
+  }
   .first-container .row .col-lg-6 h1 {
     font-size: 40px !important;
     line-height: 40px;

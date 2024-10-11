@@ -33,17 +33,19 @@
   <body>
     <nav class="navbar blue-bg">
       <div class="navbar-container">
-        <div class="logo">Logo</div>
+        <div class="logo">
+          <a href="index.html">
+              <img src="../image/1.png" alt="Logo">
+          </a>
+        </div>
         <ul class="nav-links" id="navLinks">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../files/About.html">About</a></li>
 
           <li><a href="../files/sevices.html">Service</a></li>
           <li><a href="../files/contact.html">Contact</a></li>
-          <li><a href="../files/forms.html">Job Form</a></li>
 
-
-          <li><a href="#" class="get-started">Get Started</a></li>
+          <li><a href="../files/forms.html" class="get-started">Job Form</a></li>
         </ul>
         <button class="toggle-button" id="toggleButton">☰</button>
       </div>
@@ -76,26 +78,11 @@
         </div>
       </div>
       <div class="second-container container">
-        <!-- 
-        <div
-          style="border-top: 2px solid black; padding: 3vh 2vw"
-          class="col-lg-8 col-md-7 last-line"
-        >
-          <h5>
-            By submitting this form, you agree to Companies
-            <a href="/">Terms of Service </a> and
-            <a href="/">Privacy Policy</a>
-          </h5>
-          <h5>
-            Looking for help with the job form?
-            <a href="/">Go to the help center</a>
-          </h5>
-        </div> -->
-        <form class="row">
+        <form class="row" action="pksave.php" method="POST" enctype="multipart/form-data">
           <div class="col-lg-9 row">
             <h1>Job <span>Form</span> for <span>pakistan</span></h1>
             <div class="col-lg-6">
-              <label for="first-name">Full  Name</label>
+              <label for="first-name">Full Name</label>
               <input
                 id="first-name"
                 name="first_name"
@@ -141,22 +128,12 @@
             </div>
             <div class="col-lg-6">
               <label for="gender">Gender</label>
-              <select id="gender" name="gender" class="form-select" required>
-                <option value="">Select</option>
+              <select id="gender" name="gender" class="form-select">
+                <option disabled selected>Select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
             </div>
-            <!-- <div class="col-lg-6">
-              <label for="cover-letter">Cover Letter</label>
-              <textarea
-                id="cover-letter"
-                name="cover_letter"
-                class="form-control"
-                placeholder="Write your cover letter"
-                rows="1"
-              ></textarea>
-            </div> -->
             <div class="col-lg-6">
               <label for="identity-card">Identity Card image</label>
               <input
@@ -188,21 +165,21 @@
               />
             </div>
             <div class="col-lg-6">
-              <label for="previous-company">Social Link</label>
+              <label for="current-salary">Current Salary</label>
               <input
-                id="previous-company"
-                name="previous_company"
+                id="current-salary"
+                name="current_salary"
                 type="text"
                 class="form-control"
-                placeholder="your Social link"
+                placeholder="Enter your current salary"
               />
             </div>
   
-   <div class="col-lg-6">
+            <div class="col-lg-6">
               <label for="previous-company">CV</label>
               <input
-                id="photograph"
-                name="photograph"
+                id="cv"
+                name="cv"
                 type="file"
                 class="form-control"
                 placeholder="Select Your Cv"
@@ -213,60 +190,38 @@
             <img width="100%" src="../image/Div [sc-vlvgto-0].png" alt="" />
           </div>
           <div class="col-lg-6">
-            <label for="current-salary">Current Salary</label>
+            <label for="current-salary">Social Links (Optional)</label>
             <input
-              id="current-salary"
-              name="current_salary"
+              id="social-links"
+              name="social_links"
               type="text"
               class="form-control"
-              placeholder="Enter your current salary"
+              placeholder="Enter your Social Link"
             />
           </div>
           <div class="col-lg-6">
             <label for="skills">Skills</label>
-            <input
-              id="skills"
-              name="skills"
-              type="text"
-              class="form-control"
-              placeholder="Enter your skills"
-            />
+            <input id="skills" name="skills" type="text" class="form-control" placeholder="Enter your skills" />
           </div>
           <div class="col-lg-6">
             <label for="education">Education</label>
-            <input
-              id="education"
-              name="education"
-              type="text"
-              class="form-control"
-              placeholder="Enter your education"
-            />
+            <input id="education" name="education" type="text" class="form-control" placeholder="Enter your education" />
           </div>
           <div class="col-lg-6">
-            <label for="degree-date">Degree </label>
+            <label for="degree-date">Certification (Optional)</label>
             <input
-              id="degree-date"
-              name="degree_date"
+              id="certification"
+              name="certification"
               type="text"
               class="form-control"
               placeholder="Course / Certification / Diploma."
             />
           </div>
-          <!-- <div class="col-lg-6">
-            <label for="language">Language</label>
-            <input
-              id="language"
-              name="language"
-              type="text"
-              class="form-control"
-              placeholder="Enter language"
-            />
-          </div> -->
           <div class="col-lg-6">
-            <label for="photograph">Photograph</label>
+            <label for="image">Upload Your Image</label>
             <input
-              id="photograph"
-              name="photograph"
+              id="image"
+              name="image"
               type="file"
               class="form-control"
             />
@@ -282,19 +237,6 @@
               placeholder="Enter your experience"
             />
           </div>
-         
-
-          <!-- <div class="col-lg-6">
-            <label for="previous-company">LinkedIn</label>
-            <input
-              id="previous-company"
-              name="previous_company"
-              type="text"
-              class="form-control"
-              placeholder="your LinkedIn link"
-            />
-          </div> -->
-        
           <button type="submit" class="btn ">Submit Form</button>
         </form>
       </div>
@@ -315,9 +257,9 @@
                 Get Started with <br />
                 us
               </h1>
-              <form action="">
-                <input type="email" placeholder="Email Address" />
-                <button>Get Started</button>
+              <form action="email.php" method="post">
+                <input type="email" name="email" placeholder="Email Address" />
+                <button type="submit" name="submit">Get Started</button>
               </form>
               <p>
                 Want to contact our team and book a call?
@@ -339,7 +281,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 section">
-            <h1>Logo</h1>
+            <div class="logo">
+              <a href="index.html">
+                  <img src="../image/1.png" alt="Logo">
+              </a>
+            </div>
             <p>
               Our expert financial consultants provide solutions to help you
               achieve financial wealth. Trust us to guide you toward a brighter

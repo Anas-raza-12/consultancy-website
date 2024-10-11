@@ -9,25 +9,25 @@ if (!isset($_SESSION['username'])) {
 }
 
 // Today's data
-$today_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_details WHERE DATE(applied_date) = CURDATE()";
+$today_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_data WHERE DATE(applied_date) = CURDATE()";
 $result = $conn->query($today_job_seekers_sql);
 $today_job_seekers = $result->fetch_assoc()['count'];
 
 // Current data
-$applied_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_details WHERE status = 'applied'";
+$applied_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_data WHERE status = 'applied'";
 $result = $conn->query($applied_job_seekers_sql);
 $current_applied_job_seekers = $result->fetch_assoc()['count'];
 
-$total_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_details";
+$total_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_data";
 $result = $conn->query($total_job_seekers_sql);
 $current_total_job_seekers = $result->fetch_assoc()['count'];
 
 // Previous data (e.g., from a week ago)
-$previous_applied_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_details WHERE status = 'applied' AND applied_date < NOW() - INTERVAL 1 WEEK";
+$previous_applied_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_data WHERE status = 'applied' AND applied_date < NOW() - INTERVAL 1 WEEK";
 $result = $conn->query($previous_applied_job_seekers_sql);
 $previous_applied_job_seekers = $result->fetch_assoc()['count'];
 
-$previous_total_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_details WHERE applied_date < NOW() - INTERVAL 1 WEEK";
+$previous_total_job_seekers_sql = "SELECT COUNT(*) as count FROM job_form_data WHERE applied_date < NOW() - INTERVAL 1 WEEK";
 $result = $conn->query($previous_total_job_seekers_sql);
 $previous_total_job_seekers = $result->fetch_assoc()['count'];
 
@@ -46,7 +46,7 @@ $total_job_seekers_percent_change = number_format($total_job_seekers_percent_cha
 // Fetch monthly application counts
 $applicants_sql = "
     SELECT MONTH(applied_date) as month, COUNT(*) as count 
-    FROM job_form_details 
+    FROM job_form_data 
     WHERE YEAR(applied_date) = YEAR(CURDATE())
     GROUP BY MONTH(applied_date)
     ORDER BY MONTH(applied_date)
@@ -68,7 +68,7 @@ $applicants_sql = "
         MONTH(applied_date) as month,
         SUM(CASE WHEN YEAR(applied_date) = YEAR(CURDATE()) THEN 1 ELSE 0 END) AS this_year,
         SUM(CASE WHEN YEAR(applied_date) = YEAR(CURDATE()) - 1 THEN 1 ELSE 0 END) AS last_year
-    FROM job_form_details
+    FROM job_form_data
     GROUP BY MONTH(applied_date)
     ORDER BY MONTH(applied_date)
 ";
@@ -88,7 +88,7 @@ while($row = $applicants_result->fetch_assoc()) {
 }
 
 // Fetch recent 10 applicants
-$applicants_sql = "SELECT id, name, email, applied_date FROM job_form_details ORDER BY applied_date DESC LIMIT 10";
+$applicants_sql = "SELECT id, first_name, last_name, email, applied_date FROM job_form_data ORDER BY applied_date DESC LIMIT 10";
 $applicants_result = $conn->query($applicants_sql);
 
 // Close the connection
@@ -244,10 +244,11 @@ $conn->close();
 										if ($applicants_result->num_rows > 0) {
 											$s_no = 1;
 											while($row = $applicants_result->fetch_assoc()) {
+												$last_name = htmlspecialchars($row['last_name']) ? htmlspecialchars($row['last_name']) : '';
 												$formatted_date = (new DateTime($row['applied_date']))->format('d-m-Y');
 												echo "<tr>";
 												echo "<td>" . $s_no++ . ".</td>";
-												echo "<td>" . htmlspecialchars($row['name']) . "</td>";
+												echo "<td>" . htmlspecialchars($row['first_name']) . ' ' . $last_name . "</td>";
 												echo "<td class='d-none d-xl-table-cell'>" . htmlspecialchars($row['email']) . "</td>";
 												echo "<td class='d-none d-xl-table-cell'>" . htmlspecialchars($formatted_date) . "</td>";
 												echo "<td class='table-action'><a href='job_seeker_details.php?id=" . htmlspecialchars($row['id']) . "'><i class='align-middle fas fa-fw fa-eye'></i></a></td>";
